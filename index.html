@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Fractional Shape Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fractional Shape Generator</h1>
+  <div class="controls">
+    <label>
+      Shape:
+      <select id="shapeSelect">
+        <option value="circle">Circle</option>
+        <option value="triangle">Triangle (Equilateral)</option>
+        <option value="square">Square</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="rhombus">Rhombus</option>
+        <option value="pentagon">Pentagon (Regular)</option>
+        <option value="hexagon">Hexagon (Regular)</option>
+        <option value="parallelogram">Parallelogram</option>
+        <option value="star4">Star (4-point)</option>
+        <option value="star5">Star (5-point)</option>
+        <option value="heptagon">Heptagon (Regular)</option>
+        <option value="octagon">Octagon (Regular)</option>
+        <option value="nonagon">Nonagon (Regular)</option>
+        <option value="decagon">Decagon (Regular)</option>
+        <option value="star6">Star (6-point)</option>
+        <option value="trapezoid">Trapezoid</option>
+      </select>
+    </label>
+
+    <label>
+      Number of Parts:
+      <select id="numPartsSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </label>
+
+    <label>
+      Parts to Shade:
+      <select id="partsToShadeSelect">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </label>
+
+    <label>
+      Shade Color:
+      <input type="color" id="shadeColor" value="#90ee90">
+    </label>
+
+    <button id="generateBtn">Generate</button>
+    <button id="downloadBtn">Download PNG</button>
+  </div>
+
+  <div class="canvas-container">
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
